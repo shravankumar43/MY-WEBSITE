@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shravan Kumar | My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: fast;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.7;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #0f172a;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+            border: none;
+            padding: 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a, #0f172a);
+            color: white;
+            text-align: center;
+            padding: 75px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 11px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: translateY(-3px);
+        }
+
+        /* General Sections */
+        section {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+        }
+
+        section h2 {
+            color: #1d4ed8;
+            margin-bottom: 18px;
+            border-bottom: 2px solid #dbeafe;
+            padding-bottom: 10px;
+        }
+
+        /* Skills */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 18px;
+        }
+
+        .skill-card {
+            background: #eff6ff;
+            padding: 22px;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid #dbeafe;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            background: #dbeafe;
+            transform: translateY(-5px);
+        }
+
+        /* Education */
+        .education-card {
+            border-left: 5px solid #2563eb;
+            padding: 15px 20px;
+            background: #f8fafc;
+        }
+
+        /* Contact */
+        .contact a {
+            color: #1d4ed8;
+            overflow-wrap: anywhere;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #0f172a;
+            color: white;
+            padding: 22px;
+            margin-top: 40px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            nav {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav ul {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            section {
+                margin: 20px 12px;
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Shravan.</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <header class="hero" id="home">
+        <h1>Hello, I'm <span>Shravan Kumar</span></h1>
+        <p>B.Tech CSE Student | Aspiring Web Developer</p>
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me 👨‍💻</h2>
+
+        <p>
+            Hello! My name is Shravan Kumar.
+            I am a B.Tech student in Computer Science and Engineering.
+            I am learning HTML, CSS, and JavaScript to build
+            attractive and useful websites.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills 🚀</h2>
+
+        <div class="skills">
+            <div class="skill-card">🌐 HTML</div>
+            <div class="skill-card">🎨 CSS</div>
+            <div class="skill-card">⚡ JavaScript</div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education 🎓</h2>
+
+        <div class="education-card">
+            <h3>B.Tech - Computer Science and Engineering</h3>
+            <p>Currently Pursuing</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me 📩</h2>
+
+        <p>
+            Email:
+            <a href="mailto:shravankumar904412@gmail.com">
+                shravankumar904412@gmail.com
+            </a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Shravan Kumar | My Portfolio</p>
+        <p>Designed with HTML & CSS 💙</p>
+    </footer>
+
+</body>
+
+</html>
