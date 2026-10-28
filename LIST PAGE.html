@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #dbeafe, #ede9fe);
+            margin: 0;
+            padding: 30px;
+            color: #1e293b;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #312e81;
+            margin-bottom: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px 25px;
+            margin-bottom: 22px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4338ca;
+            border-bottom: 2px solid #c7d2fe;
+            padding-bottom: 10px;
+        }
+
+        ul,
+        ol {
+            line-height: 2;
+            padding-left: 28px;
+        }
+
+        li::marker {
+            color: #4f46e5;
+            font-weight: bold;
+        }
+
+        .language-list {
+            background-color: #eef2ff;
+            padding: 15px 15px 15px 40px;
+            border-radius: 8px;
+        }
+
+        .technology-list {
+            background-color: #ecfdf5;
+            padding: 15px 15px 15px 40px;
+            border-radius: 8px;
+        }
+
+        dl {
+            line-height: 1.8;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #047857;
+            margin-top: 12px;
+        }
+
+        dd {
+            margin-left: 20px;
+            color: #475569;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #cbd5e1;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📚 HTML List Page</h1>
+
+        <!-- Unordered List -->
+        <div class="card">
+            <h2>1. Steps to Create an HTML File</h2>
+
+            <ul>
+                <li>Open VS Code</li>
+                <li>Create a file</li>
+                <li>Write HTML</li>
+                <li>Save the file</li>
+                <li>Open it in browser</li>
+            </ul>
+        </div>
+
+        <!-- Ordered List with Nested Lists -->
+        <div class="card">
+            <h2>2. Programming and Web Technologies</h2>
+
+            <ol>
+                <li>
+                    Programming Languages
+                    <ul class="language-list">
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Web Technologies
+                    <ul class="technology-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Description List -->
+        <div class="card">
+            <h2>3. Full Forms</h2>
+
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+
+                <dt>JS</dt>
+                <dd>JavaScript</dd>
+            </dl>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
