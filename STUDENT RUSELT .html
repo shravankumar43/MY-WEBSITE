@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #dbeafe, #e9d5ff);
+            margin: 0;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 80%;
+            max-width: 700px;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            color: #312e81;
+            padding: 15px;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            border: 1px solid #e5e7eb;
+        }
+
+        th {
+            background-color: #4338ca;
+            color: white;
+            font-size: 17px;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #eef2ff;
+        }
+
+        tbody tr:hover {
+            background-color: #c7d2fe;
+            transition: 0.3s;
+        }
+
+        td:last-child {
+            font-weight: bold;
+            color: #047857;
+        }
+
+        tfoot {
+            background-color: #d1fae5;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+
+            th,
+            td {
+                padding: 10px 6px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>📚 Student Result Dashboard</h1>
+
+    <table>
+        <caption>Student Marks</caption>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Math</th>
+                <th>Science</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Naman</td>
+                <td>50</td>
+                <td>10</td>
+                <td>60</td>
+            </tr>
+
+            <tr>
+                <td>Raman</td>
+                <td>60</td>
+                <td>20</td>
+                <td>80</td>
+            </tr>
+
+            <tr>
+                <td>Ramesh</td>
+                <td>70</td>
+                <td>30</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Class Total</td>
+                <td>240</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
