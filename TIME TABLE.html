@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTech 1st Year - Weekly Timetable</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #dbeafe, #ede9fe);
+            margin: 0;
+            padding: 30px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #475569;
+            margin-bottom: 25px;
+        }
+
+        .table-container {
+            max-width: 1000px;
+            margin: auto;
+            overflow-x: auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        table {
+            width: 100%;
+            min-width: 650px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 22px;
+            font-weight: bold;
+            color: #312e81;
+            padding: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #dbeafe;
+            padding: 16px 12px;
+            text-align: center;
+        }
+
+        thead th {
+            background-color: #3730a3;
+            color: white;
+        }
+
+        .day {
+            background-color: #e0e7ff;
+            color: #312e81;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        tbody tr:hover {
+            background-color: #dbeafe;
+            transition: 0.3s;
+        }
+
+        .math {
+            color: #1d4ed8;
+            font-weight: bold;
+        }
+
+        .lab {
+            background-color: #dcfce7;
+            color: #166534;
+            font-weight: bold;
+        }
+
+        .lunch {
+            background-color: #fef3c7;
+            color: #92400e;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        tfoot td {
+            padding: 16px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            caption {
+                font-size: 18px;
+            }
+
+            th,
+            td {
+                padding: 12px 8px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎓 B.Tech 1st Year</h1>
+    <p>Weekly Class Timetable</p>
+
+    <div class="table-container">
+        <table>
+            <caption>📚 Weekly Timetable</caption>
+
+            <thead>
+                <tr>
+                    <th colspan="5">TIME TABLE</th>
+                </tr>
+
+                <tr>
+                    <th>Day</th>
+                    <th>9:00–10:00</th>
+                    <th>10:00–11:00</th>
+                    <th>11:00–12:00</th>
+                    <th>12:00–1:00</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th class="day">Monday</th>
+                    <td class="math">Mathematics</td>
+                    <td>Physics</td>
+                    <td rowspan="2" class="lab">Programming Lab</td>
+                    <td>English</td>
+                </tr>
+
+                <tr>
+                    <th class="day">Tuesday</th>
+                    <td class="math">Mathematics</td>
+                    <td>Electronics</td>
+                    <td>Physics</td>
+                </tr>
+
+                <tr>
+                    <th class="day">Wednesday</th>
+                    <td colspan="2" class="lab">Web Development Lab</td>
+                    <td class="math">Mathematics</td>
+                    <td>English</td>
+                </tr>
+
+                <tr>
+                    <th class="day">Thursday</th>
+                    <td>Physics</td>
+                    <td class="math">Mathematics</td>
+                    <td>Programming</td>
+                    <td>Electronics</td>
+                </tr>
+
+                <tr>
+                    <th class="day">Friday</th>
+                    <td>English</td>
+                    <td>Physics</td>
+                    <td class="math">Mathematics</td>
+                    <td>Programming</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="5" class="lunch">
+                        🍽️ Lunch Break: 1:00 PM – 2:00 PM
+                    </td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </div>
+
+</body>
+
+</html>
